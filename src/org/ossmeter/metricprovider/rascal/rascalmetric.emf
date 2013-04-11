@@ -12,14 +12,14 @@ abstract class Measurement {
 	attr String metric;
 }
 
-class IntegerMeasurement {
+class IntegerMeasurement extends Measurement {
 	attr long value;
 }
 
-class RealMeasurement {
+class RealMeasurement extends Measurement {
     attr float value;
 }
 
-class BooleanMeasurement {
+class BooleanMeasurement extends Measurement {
     attr boolean value;
 }
