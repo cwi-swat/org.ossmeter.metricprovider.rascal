@@ -1,7 +1,7 @@
 package org.ossmeter.metricprovider.rascal;
 
-import com.googlecode.pongo.runtime.*;
-import com.mongodb.*;
+import com.googlecode.pongo.runtime.PongoDB;
+import com.mongodb.DB;
 
 public class RascalMetrics extends PongoDB {
 	
