@@ -18,12 +18,14 @@ public class Foo {
 	  
 
 	  // findByMetric wouldn't want to return an iterable... Maybe we need to build up queries and end with .call();
-	  Iterable<Measurement> classMeasures = rm.getMeasurements().findByMetric(transientMetricID).filterByUri("class://*");
+	  Iterable<IntegerMeasurement> integerMeasures = rm.getIntegerMeasurements()
+			  	.findByMetric(transientMetricID).filterByUri("class://*");
+//	  											.groupBy("regex???");
 	  
 	  double culm = 0;
 	  double count = 0;
-	  for (Measurement m : classMeasures) {
-		  culm += ((IntegerMeasurement)m).getValue();
+	  for (IntegerMeasurement m : integerMeasures) {
+		  culm += m.getValue();
 		  count++;
 	  }
 	  culm =  culm / count; // save in historic DB as AVERAGE LOC PER CLASS metric?

@@ -1,8 +1,5 @@
 package org.ossmeter.metricprovider.rascal;
 
-import com.mongodb.*;
-import java.util.*;
-import com.googlecode.pongo.runtime.*;
 
 
 public class BooleanMeasurement extends Measurement {

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project rascal-shell with Jar-in-Jar Loader">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="/Users/jurgenv/Desktop/r2d2.jar">
+            <manifest>
+                <attribute name="Main-Class" value="org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader"/>
+                <attribute name="Rsrc-Main-Class" value="org.rascalmpl.shell.RascalShell"/>
+                <attribute name="Class-Path" value="."/>
+                <attribute name="Rsrc-Class-Path" value="./ jline-0.9.94.jar junit.jar org.hamcrest.core_1.1.0.v20090501071000.jar org.eclipse.swt_3.7.1.v3738a.jar org.eclipse.swt.cocoa.macosx.x86_64_3.7.1.v3738a.jar org.jdom_1.1.1.v201101151400.jar org.objectweb.asm_3.3.1.v201105211655.jar org.apache.commons.math_2.1.0.v201105210652.jar org.apache.commons.lang_2.4.0.v201005080502.jar org.eclipse.jetty.http_7.5.1.v20110908.jar org.eclipse.jetty.server_7.5.1.v20110908.jar org.eclipse.jetty.servlet_7.5.1.v20110908.jar org.eclipse.jetty.util_7.5.1.v20110908.jar org.eclipse.jetty.io_7.5.1.v20110908.jar org.eclipse.jetty.xml_7.5.1.v20110908.jar org.eclipse.jetty.security_7.5.1.v20110908.jar org.eclipse.jetty.webapp_7.5.1.v20110908.jar org.eclipse.jetty.continuation_7.5.1.v20110908.jar org.eclipse.jetty.annotations_7.5.1.v20110908.jar com.ibm.icu_4.4.2.v20110208.jar javax.servlet_2.5.0.v201103041518.jar snakeyaml-1.11.jar"/>
+            </manifest>
+            <zipfileset src="jar-in-jar-loader.zip"/>
+            <fileset dir="/Users/jurgenv/git/rascal-shell/bin"/>
+            <zipfileset dir="/Users/jurgenv/git/rascal-shell/lib" includes="jline-0.9.94.jar"/>
+            <fileset dir="/Users/jurgenv/git/rascal/bin"/>
+            <fileset dir="/Users/jurgenv/git/pdb.values/bin"/>
+            <fileset dir="/Users/jurgenv/git/rascal-ossmeter-metrics/bin"/>
+        	  <fileset dir="/Users/jurgenv/EclipseWorkspace/org.ossmeter.metricprovider.rascal/bin"/>
+            <zipfileset dir="/Applications/eclipse-indigo-64/plugins/org.junit_4.8.2.v4_8_2_v20110321-1705" includes="junit.jar"/>
+            <zipfileset dir="/Applications/eclipse-indigo-64/plugins" includes="org.hamcrest.core_1.1.0.v20090501071000.jar"/>
+            <zipfileset dir="/Applications/eclipse-indigo-64/plugins" includes="org.eclipse.swt_3.7.1.v3738a.jar"/>
+            <zipfileset dir="/Applications/eclipse-indigo-64/plugins" includes="org.eclipse.swt.cocoa.macosx.x86_64_3.7.1.v3738a.jar"/>
+            <zipfileset dir="/Applications/eclipse-indigo-64/plugins" includes="org.jdom_1.1.1.v201101151400.jar"/>
+            <zipfileset dir="/Applications/eclipse-indigo-64/plugins" includes="org.objectweb.asm_3.3.1.v201105211655.jar"/>
+            <zipfileset dir="/Applications/eclipse-indigo-64/plugins" includes="org.apache.commons.math_2.1.0.v201105210652.jar"/>
+            <zipfileset dir="/Applications/eclipse-indigo-64/plugins" includes="org.apache.commons.lang_2.4.0.v201005080502.jar"/>
+            <zipfileset dir="/Applications/eclipse-indigo-64/plugins" includes="org.eclipse.jetty.http_7.5.1.v20110908.jar"/>
+            <zipfileset dir="/Applications/eclipse-indigo-64/plugins" includes="org.eclipse.jetty.server_7.5.1.v20110908.jar"/>
+            <zipfileset dir="/Applications/eclipse-indigo-64/plugins" includes="org.eclipse.jetty.servlet_7.5.1.v20110908.jar"/>
+            <zipfileset dir="/Applications/eclipse-indigo-64/plugins" includes="org.eclipse.jetty.util_7.5.1.v20110908.jar"/>
+            <zipfileset dir="/Applications/eclipse-indigo-64/plugins" includes="org.eclipse.jetty.io_7.5.1.v20110908.jar"/>
+            <zipfileset dir="/Applications/eclipse-indigo-64/plugins" includes="org.eclipse.jetty.xml_7.5.1.v20110908.jar"/>
+            <zipfileset dir="/Applications/eclipse-indigo-64/plugins" includes="org.eclipse.jetty.security_7.5.1.v20110908.jar"/>
+            <zipfileset dir="/Applications/eclipse-indigo-64/plugins" includes="org.eclipse.jetty.webapp_7.5.1.v20110908.jar"/>
+            <zipfileset dir="/Applications/eclipse-indigo-64/plugins" includes="org.eclipse.jetty.continuation_7.5.1.v20110908.jar"/>
+            <zipfileset dir="/Applications/eclipse-indigo-64/plugins" includes="org.eclipse.jetty.annotations_7.5.1.v20110908.jar"/>
+            <zipfileset dir="/Applications/eclipse-indigo-64/plugins" includes="com.ibm.icu_4.4.2.v20110208.jar"/>
+            <zipfileset dir="/Applications/eclipse-indigo-64/plugins" includes="javax.servlet_2.5.0.v201103041518.jar"/>
+            <zipfileset dir="/Users/jurgenv/git/rascal/lib" includes="snakeyaml-1.11.jar"/>
+        </jar>
+    </target>
+</project>
