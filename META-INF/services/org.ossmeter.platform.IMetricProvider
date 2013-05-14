@@ -1,1 +1,2 @@
 org.ossmeter.metricprovider.rascal.test.DemoLocProvider
+org.ossmeter.metricprovider.rascal.history.LocHistoricMetricProvider
